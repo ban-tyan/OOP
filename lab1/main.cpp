@@ -27,7 +27,7 @@ int main() {
     BoxRandomPoint generator(mx, Mx, my, My, mz, Mz);
     
     // Сохранение параметров области
-    generator.saveSettings("settings.dat");
+    generator.saveSet("settings.dat");
     cout << "Settings saved to settings.dat" << endl;
 
     int K;
