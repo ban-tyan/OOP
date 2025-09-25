@@ -1,0 +1,4 @@
+*.o
+main
+points.txt
+settings.dat
