@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['readme_0',['README',['../md_README.html',1,'']]],
-  ['rnd_1',['rnd',['../classBoxRandomPoint.html#ae99ed6dad5ace17b19fc2e56dee3e52f',1,'BoxRandomPoint']]]
+  ['main_0',['main',['../namespaceplot__points.html#a993df313c1b2f20b7271a1ad34b863cf',1,'plot_points']]]
 ];

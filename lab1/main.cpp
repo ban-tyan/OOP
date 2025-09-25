@@ -25,7 +25,8 @@ int main() {
 
     // Создание генератора точек
     BoxRandomPoint generator(mx, Mx, my, My, mz, Mz);
-    
+    generator.rnd(10000);
+    generator.printBounds();
     // Сохранение параметров области
     generator.saveSet("settings.dat");
     cout << "Settings saved to settings.dat" << endl;

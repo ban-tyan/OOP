@@ -60,6 +60,10 @@ class BoxRandomPoint {
     double max_y;  ///< Максимальная координата Y
     double min_z;  ///< Минимальная координата Z
     double max_z;  ///< Максимальная координата Z
+    
+    point3d* pointsArray;  ///< Указатель на массив точек
+    int pointsCount;       ///< Количество точек в массиве
+    int arrayCapacity;     ///< Вместимость массива
 
 public:
     /**
@@ -73,6 +77,11 @@ public:
      * @warning Если min > max по любой координате, значения будут автоматически поменяны местами
      */
     BoxRandomPoint(double mx, double Mx, double my, double My, double mz, double Mz);
+    
+    /**
+     * @brief Деструктор - освобождает память
+     */
+    ~BoxRandomPoint();
     
     /**
      * @brief Установка новых границ области
@@ -92,6 +101,31 @@ public:
     point3d rnd();
     
     /**
+     * @brief Генерация нескольких случайных точек
+     * @param count Количество точек для генерации
+     */
+    void generatePoints(int count);
+    
+    /**
+     * @brief Добавление точки в массив
+     * @param p Точка для добавления
+     */
+    void addPoint(const point3d& p);
+    
+    /**
+     * @brief Получение точки по индексу
+     * @param index Индекс точки
+     * @return Указатель на точку или nullptr если индекс неверный
+     */
+    point3d* getPoint(int index) const;
+    
+    /**
+     * @brief Получение количества точек в массиве
+     * @return Количество точек
+     */
+    int getPointsCount() const;
+    
+    /**
      * @brief Вывод текущих границ области на экран
      */
     void printBounds() const;
@@ -100,7 +134,24 @@ public:
      * @brief Сохранение параметров области в файл
      * @param filename Имя файла для сохранения
      */
-    void saveSet(const char* filename) const;
+    void saveSettings(const char* filename) const;
+    
+    /**
+     * @brief Сохранение всех точек в файл
+     * @param filename Имя файла для сохранения
+     */
+    void savePointsToFile(const char* filename) const;
+    
+    /**
+     * @brief Вывод информации о массиве точек
+     */
+    void printPointsInfo() const;
+
+private:
+    /**
+     * @brief Увеличение емкости массива при необходимости
+     */
+    void resizeArray();
 };
 
 #endif

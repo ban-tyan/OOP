@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['saveset_0',['saveSet',['../classBoxRandomPoint.html#a71bf31ee174c279d898ae8150a1ebb95',1,'BoxRandomPoint']]],
-  ['setbounds_1',['setBounds',['../classBoxRandomPoint.html#a5b9911ab55ee055060bdb10504f3693e',1,'BoxRandomPoint']]]
+  ['point3d_0',['point3d',['../structpoint3d.html#a5a1216465935ea8f1db73206a353b729',1,'point3d']]],
+  ['print_1',['print',['../structpoint3d.html#abc3417420bb616ff9ad68e511ca611b6',1,'point3d']]],
+  ['printbounds_2',['printBounds',['../classBoxRandomPoint.html#aa2a16cf90b280257594291d56e070603',1,'BoxRandomPoint']]]
 ];

@@ -1,27 +1,30 @@
 var indexSectionsWithContent =
 {
-  0: "bgprsxyz",
+  0: "bglmprsxyz",
   1: "bp",
-  2: "bgprs",
-  3: "xyz",
-  4: "r"
+  2: "p",
+  3: "bglmprs",
+  4: "xyz",
+  5: "r"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "functions",
-  3: "variables",
-  4: "pages"
+  2: "namespaces",
+  3: "functions",
+  4: "variables",
+  5: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "Указатель",
   1: "Классы",
-  2: "Функции",
-  3: "Переменные",
-  4: "Страницы"
+  2: "Пространства имен",
+  3: "Функции",
+  4: "Переменные",
+  5: "Страницы"
 };
 

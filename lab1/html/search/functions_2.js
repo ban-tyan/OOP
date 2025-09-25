@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['point3d_0',['point3d',['../structpoint3d.html#a5a1216465935ea8f1db73206a353b729',1,'point3d']]],
-  ['print_1',['print',['../structpoint3d.html#abc3417420bb616ff9ad68e511ca611b6',1,'point3d']]],
-  ['printbounds_2',['printBounds',['../classBoxRandomPoint.html#aa2a16cf90b280257594291d56e070603',1,'BoxRandomPoint']]]
+  ['load_5fpoints_0',['load_points',['../namespaceplot__points.html#a30e56523a75f6cbff885a1b389f32d43',1,'plot_points']]]
 ];
