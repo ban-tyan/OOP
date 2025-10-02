@@ -1,52 +1,41 @@
 #!/usr/bin/env python3
 """
-@file plot_points.py
-@brief Скрипт для визуализации 3D точек из файла points.txt
-@details Использует библиотеки matplotlib и numpy для создания 3D графика
+@file plot_points.py  
+@brief Максимально простой скрипт визуализации
 """
 
-import matplotlib.pyplot as plt
 import numpy as np
-from mpl_toolkits.mplot3d import Axes3D
-
-def load_points(filename):
-    """
-    @brief Загрузка точек из файла
-    @param filename Имя файла с точками
-    @return Три массива координат: x, y, z
-    """
-    try:
-        data = np.loadtxt(filename)
-        if data.ndim == 1:  # Если только одна точка
-            data = data.reshape(1, -1)
-        return data[:,0], data[:,1], data[:,2]
-    except Exception as e:
-        print(f"Error loading file: {e}")
-        return [], [], []
+import matplotlib
+matplotlib.use('TkAgg')  # Явно указываем TkAgg
+import matplotlib.pyplot as plt
 
 def main():
-    """
-    @brief Основная функция скрипта визуализации
-    """
     try:
-        x, y, z = load_points('points.txt')
+        # Загружаем данные
+        data = np.loadtxt('points.txt')
+        if data.ndim == 1:
+            data = data.reshape(1, -1)
+            
+        x, y, z = data[:,0], data[:,1], data[:,2]
+        print(f"Visualizing {len(x)} points...")
         
-        if len(x) == 0:
-            print("No points to visualize.")
-            return
-        
+        # Простой 3D график
         fig = plt.figure()
         ax = fig.add_subplot(111, projection='3d')
         
-        # Визуализация точек
-        ax.scatter(x, y, z, c='b', marker='o', alpha=0.6)
+        # Для производительности сэмплируем если точек много
+        if len(x) > 5000:
+            step = len(x) // 2000
+            x, y, z = x[::step], y[::step], z[::step]
+            print(f"Sampled to {len(x)} points for performance")
         
-        # Настройка осей
+        ax.scatter(x, y, z, c=z, s=1, alpha=0.6, cmap='viridis')
         ax.set_xlabel('X')
         ax.set_ylabel('Y')
         ax.set_zlabel('Z')
-        ax.set_title('3D Visualization')
+        ax.set_title('3D Points - Drag to rotate')
         
+        print("Plot ready! Drag to rotate, close window to exit.")
         plt.show()
         
     except Exception as e:
