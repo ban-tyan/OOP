@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 @file plot_points.py  
-@brief Максимально простой скрипт визуализации
+@brief Максимально простой скрипт визуализации, вращающий фигуру во все стороны
 """
 
 import numpy as np
@@ -19,7 +19,7 @@ def main():
         x, y, z = data[:,0], data[:,1], data[:,2]
         print(f"Visualizing {len(x)} points...")
         
-        # Простой 3D график
+        # 3D график
         fig = plt.figure()
         ax = fig.add_subplot(111, projection='3d')
         
@@ -35,7 +35,7 @@ def main():
         ax.set_zlabel('Z')
         ax.set_title('3D Points - Drag to rotate')
         
-        print("Plot ready! Drag to rotate, close window to exit.")
+        print("Plot ready!")
         plt.show()
         
     except Exception as e:

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['saveset_0',['saveSet',['../classBoxRandomPoint.html#a71bf31ee174c279d898ae8150a1ebb95',1,'BoxRandomPoint']]],
-  ['setbounds_1',['setBounds',['../classBoxRandomPoint.html#a5b9911ab55ee055060bdb10504f3693e',1,'BoxRandomPoint']]]
+  ['_7eboxrandompoint_0',['~BoxRandomPoint',['../classBoxRandomPoint.html#a5d9d98d01de49f02e3581c94f8491629',1,'BoxRandomPoint']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['readme_0',['README',['../md_README.html',1,'']]],
-  ['rnd_1',['rnd',['../classBoxRandomPoint.html#ae99ed6dad5ace17b19fc2e56dee3e52f',1,'BoxRandomPoint']]]
+  ['savepointstofile_0',['savePointsToFile',['../classBoxRandomPoint.html#a3668d1a326f60f7d38b38279df873897',1,'BoxRandomPoint']]],
+  ['savesettings_1',['saveSettings',['../classBoxRandomPoint.html#a00db76f26beff64f71a5e38397401a62',1,'BoxRandomPoint']]],
+  ['setbounds_2',['setBounds',['../classBoxRandomPoint.html#a5b9911ab55ee055060bdb10504f3693e',1,'BoxRandomPoint']]]
 ];

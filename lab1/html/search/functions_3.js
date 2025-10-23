@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['main_0',['main',['../namespaceplot__points.html#a993df313c1b2f20b7271a1ad34b863cf',1,'plot_points']]]
+  ['point3d_0',['point3d',['../structpoint3d.html#a5a1216465935ea8f1db73206a353b729',1,'point3d']]],
+  ['print_1',['print',['../structpoint3d.html#abc3417420bb616ff9ad68e511ca611b6',1,'point3d']]],
+  ['printbounds_2',['printBounds',['../classBoxRandomPoint.html#aa2a16cf90b280257594291d56e070603',1,'BoxRandomPoint']]],
+  ['printpointsinfo_3',['printPointsInfo',['../classBoxRandomPoint.html#ac441d3d27dd6bebd248112f2f153c67f',1,'BoxRandomPoint']]]
 ];

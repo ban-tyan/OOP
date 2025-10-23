@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Исходный файл box_random_point.h</title>
+<title>Лабораторная работа №1: Исходный файл box_random_point.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">Лабораторная работа №1
    </div>
+   <div id="projectbrief">Система генерации и визуализации трехмерных точек</div>
   </td>
  </tr>
  </tbody>
@@ -101,34 +102,62 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
 </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classBoxRandomPoint.html">   56</a></span><span class="keyword">class </span><a class="code hl_class" href="classBoxRandomPoint.html">BoxRandomPoint</a> {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">double</span> min_x;  </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">double</span> max_x;  </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">double</span> min_y;  </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">double</span> max_y;  </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">double</span> min_z;  </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">double</span> max_z;  </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_class" href="classBoxRandomPoint.html">BoxRandomPoint</a>(<span class="keywordtype">double</span> mx, <span class="keywordtype">double</span> Mx, <span class="keywordtype">double</span> my, <span class="keywordtype">double</span> My, <span class="keywordtype">double</span> mz, <span class="keywordtype">double</span> Mz);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBoxRandomPoint.html#a5b9911ab55ee055060bdb10504f3693e">setBounds</a>(<span class="keywordtype">double</span> mx, <span class="keywordtype">double</span> Mx, <span class="keywordtype">double</span> my, <span class="keywordtype">double</span> My, <span class="keywordtype">double</span> mz, <span class="keywordtype">double</span> Mz);</div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="};">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classBoxRandomPoint.html">   57</a></span><span class="keyword">class </span><a class="code hl_class" href="classBoxRandomPoint.html">BoxRandomPoint</a> {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">double</span> min_x;  </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">double</span> max_x;  </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">double</span> min_y;  </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">double</span> max_y;  </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">double</span> min_z;  </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">double</span> max_z;  </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_struct" href="structpoint3d.html">point3d</a>* pointsArray;  </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">int</span> pointsCount;       </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">int</span> arrayCapacity;     </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_class" href="classBoxRandomPoint.html">BoxRandomPoint</a>(<span class="keywordtype">double</span> mx, <span class="keywordtype">double</span> Mx, <span class="keywordtype">double</span> my, <span class="keywordtype">double</span> My, <span class="keywordtype">double</span> mz, <span class="keywordtype">double</span> Mz);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_function" href="classBoxRandomPoint.html#a5d9d98d01de49f02e3581c94f8491629">~BoxRandomPoint</a>();</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_struct" href="structpoint3d.html">point3d</a> <a class="code hl_function" href="classBoxRandomPoint.html#ae99ed6dad5ace17b19fc2e56dee3e52f">rnd</a>();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBoxRandomPoint.html#aa2a16cf90b280257594291d56e070603">printBounds</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBoxRandomPoint.html#a5b9911ab55ee055060bdb10504f3693e">setBounds</a>(<span class="keywordtype">double</span> mx, <span class="keywordtype">double</span> Mx, <span class="keywordtype">double</span> my, <span class="keywordtype">double</span> My, <span class="keywordtype">double</span> mz, <span class="keywordtype">double</span> Mz);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBoxRandomPoint.html#a71bf31ee174c279d898ae8150a1ebb95">saveSet</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_struct" href="structpoint3d.html">point3d</a> <a class="code hl_function" href="classBoxRandomPoint.html#ae99ed6dad5ace17b19fc2e56dee3e52f">rnd</a>();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBoxRandomPoint.html#aaff602ee1c592ef988368ea24a48a0f3">generatePoints</a>(<span class="keywordtype">int</span> count);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBoxRandomPoint.html#a576ea90ef421002fb03c9e95adfa8300">addPoint</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structpoint3d.html">point3d</a>&amp; p);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <a class="code hl_struct" href="structpoint3d.html">point3d</a>* <a class="code hl_function" href="classBoxRandomPoint.html#a8f8c0d4cb036126a5183e99a830ba765">getPoint</a>(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classBoxRandomPoint.html#adee1336d5ec08d105551911f1b7d2fb3">getPointsCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBoxRandomPoint.html#aa2a16cf90b280257594291d56e070603">printBounds</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBoxRandomPoint.html#a00db76f26beff64f71a5e38397401a62">saveSettings</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBoxRandomPoint.html#a3668d1a326f60f7d38b38279df873897">savePointsToFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBoxRandomPoint.html#ac441d3d27dd6bebd248112f2f153c67f">printPointsInfo</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordtype">void</span> resizeArray();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>};</div>
 </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassBoxRandomPoint_html"><div class="ttname"><a href="classBoxRandomPoint.html">BoxRandomPoint</a></div><div class="ttdoc">Класс для генерации случайных точек в параллелепипеде</div><div class="ttdef"><b>Definition</b> box_random_point.h:56</div></div>
-<div class="ttc" id="aclassBoxRandomPoint_html_a5b9911ab55ee055060bdb10504f3693e"><div class="ttname"><a href="classBoxRandomPoint.html#a5b9911ab55ee055060bdb10504f3693e">BoxRandomPoint::setBounds</a></div><div class="ttdeci">void setBounds(double mx, double Mx, double my, double My, double mz, double Mz)</div><div class="ttdoc">Установка новых границ области</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:71</div></div>
-<div class="ttc" id="aclassBoxRandomPoint_html_a71bf31ee174c279d898ae8150a1ebb95"><div class="ttname"><a href="classBoxRandomPoint.html#a71bf31ee174c279d898ae8150a1ebb95">BoxRandomPoint::saveSet</a></div><div class="ttdeci">void saveSet(const char *filename) const</div><div class="ttdoc">Сохранение параметров области в файл</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:104</div></div>
-<div class="ttc" id="aclassBoxRandomPoint_html_aa2a16cf90b280257594291d56e070603"><div class="ttname"><a href="classBoxRandomPoint.html#aa2a16cf90b280257594291d56e070603">BoxRandomPoint::printBounds</a></div><div class="ttdeci">void printBounds() const</div><div class="ttdoc">Вывод текущих границ области на экран</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:95</div></div>
-<div class="ttc" id="aclassBoxRandomPoint_html_ae99ed6dad5ace17b19fc2e56dee3e52f"><div class="ttname"><a href="classBoxRandomPoint.html#ae99ed6dad5ace17b19fc2e56dee3e52f">BoxRandomPoint::rnd</a></div><div class="ttdeci">point3d rnd()</div><div class="ttdoc">Генерация случайной точки в области</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:85</div></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassBoxRandomPoint_html"><div class="ttname"><a href="classBoxRandomPoint.html">BoxRandomPoint</a></div><div class="ttdoc">Класс для генерации случайных точек в параллелепипеде</div><div class="ttdef"><b>Definition</b> box_random_point.h:57</div></div>
+<div class="ttc" id="aclassBoxRandomPoint_html_a00db76f26beff64f71a5e38397401a62"><div class="ttname"><a href="classBoxRandomPoint.html#a00db76f26beff64f71a5e38397401a62">BoxRandomPoint::saveSettings</a></div><div class="ttdeci">void saveSettings(const char *filename) const</div><div class="ttdoc">Сохранение параметров области в файл</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:167</div></div>
+<div class="ttc" id="aclassBoxRandomPoint_html_a3668d1a326f60f7d38b38279df873897"><div class="ttname"><a href="classBoxRandomPoint.html#a3668d1a326f60f7d38b38279df873897">BoxRandomPoint::savePointsToFile</a></div><div class="ttdeci">void savePointsToFile(const char *filename) const</div><div class="ttdoc">Сохранение всех точек в файл</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:181</div></div>
+<div class="ttc" id="aclassBoxRandomPoint_html_a576ea90ef421002fb03c9e95adfa8300"><div class="ttname"><a href="classBoxRandomPoint.html#a576ea90ef421002fb03c9e95adfa8300">BoxRandomPoint::addPoint</a></div><div class="ttdeci">void addPoint(const point3d &amp;p)</div><div class="ttdoc">Добавление точки в массив</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:126</div></div>
+<div class="ttc" id="aclassBoxRandomPoint_html_a5b9911ab55ee055060bdb10504f3693e"><div class="ttname"><a href="classBoxRandomPoint.html#a5b9911ab55ee055060bdb10504f3693e">BoxRandomPoint::setBounds</a></div><div class="ttdeci">void setBounds(double mx, double Mx, double my, double My, double mz, double Mz)</div><div class="ttdoc">Установка новых границ области</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:89</div></div>
+<div class="ttc" id="aclassBoxRandomPoint_html_a5d9d98d01de49f02e3581c94f8491629"><div class="ttname"><a href="classBoxRandomPoint.html#a5d9d98d01de49f02e3581c94f8491629">BoxRandomPoint::~BoxRandomPoint</a></div><div class="ttdeci">~BoxRandomPoint()</div><div class="ttdoc">Деструктор - освобождает память</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:75</div></div>
+<div class="ttc" id="aclassBoxRandomPoint_html_a8f8c0d4cb036126a5183e99a830ba765"><div class="ttname"><a href="classBoxRandomPoint.html#a8f8c0d4cb036126a5183e99a830ba765">BoxRandomPoint::getPoint</a></div><div class="ttdeci">point3d * getPoint(int index) const</div><div class="ttdoc">Получение точки по индексу</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:140</div></div>
+<div class="ttc" id="aclassBoxRandomPoint_html_aa2a16cf90b280257594291d56e070603"><div class="ttname"><a href="classBoxRandomPoint.html#aa2a16cf90b280257594291d56e070603">BoxRandomPoint::printBounds</a></div><div class="ttdeci">void printBounds() const</div><div class="ttdoc">Вывод текущих границ области на экран</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:158</div></div>
+<div class="ttc" id="aclassBoxRandomPoint_html_aaff602ee1c592ef988368ea24a48a0f3"><div class="ttname"><a href="classBoxRandomPoint.html#aaff602ee1c592ef988368ea24a48a0f3">BoxRandomPoint::generatePoints</a></div><div class="ttdeci">void generatePoints(int count)</div><div class="ttdoc">Генерация нескольких случайных точек и добавление их в массив</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:114</div></div>
+<div class="ttc" id="aclassBoxRandomPoint_html_ac441d3d27dd6bebd248112f2f153c67f"><div class="ttname"><a href="classBoxRandomPoint.html#ac441d3d27dd6bebd248112f2f153c67f">BoxRandomPoint::printPointsInfo</a></div><div class="ttdeci">void printPointsInfo() const</div><div class="ttdoc">Вывод информации о массиве точек</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:195</div></div>
+<div class="ttc" id="aclassBoxRandomPoint_html_adee1336d5ec08d105551911f1b7d2fb3"><div class="ttname"><a href="classBoxRandomPoint.html#adee1336d5ec08d105551911f1b7d2fb3">BoxRandomPoint::getPointsCount</a></div><div class="ttdeci">int getPointsCount() const</div><div class="ttdoc">Получение количества точек в массиве</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:151</div></div>
+<div class="ttc" id="aclassBoxRandomPoint_html_ae99ed6dad5ace17b19fc2e56dee3e52f"><div class="ttname"><a href="classBoxRandomPoint.html#ae99ed6dad5ace17b19fc2e56dee3e52f">BoxRandomPoint::rnd</a></div><div class="ttdeci">point3d rnd()</div><div class="ttdoc">Генерация одной случайной точки в области</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:103</div></div>
 <div class="ttc" id="astructpoint3d_html"><div class="ttname"><a href="structpoint3d.html">point3d</a></div><div class="ttdoc">Структура для хранения трехмерных координат точки</div><div class="ttdef"><b>Definition</b> box_random_point.h:11</div></div>
 <div class="ttc" id="astructpoint3d_html_a169d1f7c78b6d95996095bf55aa01c28"><div class="ttname"><a href="structpoint3d.html#a169d1f7c78b6d95996095bf55aa01c28">point3d::getBackZ</a></div><div class="ttdeci">double getBackZ() const</div><div class="ttdoc">Получение координаты Z.</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:39</div></div>
 <div class="ttc" id="astructpoint3d_html_a7b98e0639fab0ae683fb5d403fa3ba2c"><div class="ttname"><a href="structpoint3d.html#a7b98e0639fab0ae683fb5d403fa3ba2c">point3d::getBackY</a></div><div class="ttdeci">double getBackY() const</div><div class="ttdoc">Получение координаты Y.</div><div class="ttdef"><b>Definition</b> box_random_point.cpp:33</div></div>

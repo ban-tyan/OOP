@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z_0',['z',['../structpoint3d.html#a96e63d7cd720242d2f79287b04a503e1',1,'point3d']]]
+  ['_7eboxrandompoint_0',['~BoxRandomPoint',['../classBoxRandomPoint.html#a5d9d98d01de49f02e3581c94f8491629',1,'BoxRandomPoint']]]
 ];
