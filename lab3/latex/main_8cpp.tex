@@ -1,0 +1,100 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Комплексное тестирование иерархии классов геометрических фигур  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$typeinfo$>$}\newline
+{\ttfamily \#include "{}figure.\+h"{}}\newline
+{\ttfamily \#include "{}polygon.\+h"{}}\newline
+{\ttfamily \#include "{}rectangle.\+h"{}}\newline
+{\ttfamily \#include "{}square.\+h"{}}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_afd68ea1666c8187d63e06f6f576f433e}{demonstrate\+Polymorphism\+Via\+Pointer}} (\mbox{\hyperlink{classFigure}{Figure}} \texorpdfstring{$\ast$}{*}figure)
+\begin{DoxyCompactList}\small\item\em Функция демонстрации полиморфизма через указатели \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a10f1102f02ba5bf96012c22b669add38}{demonstrate\+Polymorphism\+Via\+Reference}} (\mbox{\hyperlink{classFigure}{Figure}} \&figure)
+\begin{DoxyCompactList}\small\item\em Функция демонстрации полиморфизма через ссылки \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_ae34ab3d2a58500a68291668d0e8f3469}\label{main_8cpp_ae34ab3d2a58500a68291668d0e8f3469} 
+void {\bfseries test\+All\+Object\+Types\+Creation} ()
+\begin{DoxyCompactList}\small\item\em Тест создания объектов всех возможных типов \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_a2fda44166ab4b387455af0b80708264b}\label{main_8cpp_a2fda44166ab4b387455af0b80708264b} 
+void {\bfseries test\+Polymorphism} ()
+\begin{DoxyCompactList}\small\item\em Тест полиморфизма через указатели и ссылки разных типов \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_a67742e49dae7d20ce0536378ce4b7b2e}\label{main_8cpp_a67742e49dae7d20ce0536378ce4b7b2e} 
+void {\bfseries test\+Static\+Members} ()
+\begin{DoxyCompactList}\small\item\em Тест статических членов класса в различных сценариях \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_aefd41633cb4f5309ec87f1aca5b71780}\label{main_8cpp_aefd41633cb4f5309ec87f1aca5b71780} 
+void {\bfseries test\+Deep\+Copy} ()
+\begin{DoxyCompactList}\small\item\em Тест глубокого копирования для всех классов \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_a8a463122ee4bb8cdcc07f4cddcbab00b}\label{main_8cpp_a8a463122ee4bb8cdcc07f4cddcbab00b} 
+void {\bfseries test\+Virtual\+Functions\+With\+Default} ()
+\begin{DoxyCompactList}\small\item\em Тест виртуальных функций с реализацией по умолчанию \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_a41c6966fc44c8906b333c8fbb03a8083}\label{main_8cpp_a41c6966fc44c8906b333c8fbb03a8083} 
+void {\bfseries test\+Multiple\+Inheritance} ()
+\begin{DoxyCompactList}\small\item\em Тест множественного наследования \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_a265d7ec269ab72ebd46f41fa31107ec0}\label{main_8cpp_a265d7ec269ab72ebd46f41fa31107ec0} 
+void {\bfseries test\+Exception\+Handling} ()
+\begin{DoxyCompactList}\small\item\em Тест обработки исключений \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_ad5de4422b6121cbaa1b67461a1024da6}\label{main_8cpp_ad5de4422b6121cbaa1b67461a1024da6} 
+void {\bfseries test\+Object\+Lifetime} ()
+\begin{DoxyCompactList}\small\item\em Тест жизненного цикла объектов \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_a55f0230535768d6e930c3214e03a1ab2}\label{main_8cpp_a55f0230535768d6e930c3214e03a1ab2} 
+void {\bfseries test\+Edge\+Cases} ()
+\begin{DoxyCompactList}\small\item\em Тест граничных случаев и особых сценариев \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_a1848f8f0dcb476a97623ccd274653ee8}\label{main_8cpp_a1848f8f0dcb476a97623ccd274653ee8} 
+void {\bfseries test\+Performance\+And\+Correctness} ()
+\begin{DoxyCompactList}\small\item\em Итоговый тест производительности и корректности \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int {\bfseries main} ()
+\begin{DoxyCompactList}\small\item\em Основная функция тестирования \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Комплексное тестирование иерархии классов геометрических фигур 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_afd68ea1666c8187d63e06f6f576f433e}\label{main_8cpp_afd68ea1666c8187d63e06f6f576f433e} 
+\index{main.cpp@{main.cpp}!demonstratePolymorphismViaPointer@{demonstratePolymorphismViaPointer}}
+\index{demonstratePolymorphismViaPointer@{demonstratePolymorphismViaPointer}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{demonstratePolymorphismViaPointer()}{demonstratePolymorphismViaPointer()}}
+{\footnotesize\ttfamily void demonstrate\+Polymorphism\+Via\+Pointer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFigure}{Figure}} \texorpdfstring{$\ast$}{*}}]{figure }\end{DoxyParamCaption})}
+
+
+
+Функция демонстрации полиморфизма через указатели 
+
+
+\begin{DoxyParams}{Parameters}
+{\em figure} & Указатель на базовый класс \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8cpp_a10f1102f02ba5bf96012c22b669add38}\label{main_8cpp_a10f1102f02ba5bf96012c22b669add38} 
+\index{main.cpp@{main.cpp}!demonstratePolymorphismViaReference@{demonstratePolymorphismViaReference}}
+\index{demonstratePolymorphismViaReference@{demonstratePolymorphismViaReference}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{demonstratePolymorphismViaReference()}{demonstratePolymorphismViaReference()}}
+{\footnotesize\ttfamily void demonstrate\+Polymorphism\+Via\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFigure}{Figure}} \&}]{figure }\end{DoxyParamCaption})}
+
+
+
+Функция демонстрации полиморфизма через ссылки 
+
+
+\begin{DoxyParams}{Parameters}
+{\em figure} & Ссылка на базовый класс \\
+\hline
+\end{DoxyParams}

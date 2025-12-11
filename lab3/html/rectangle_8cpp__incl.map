@@ -1,0 +1,19 @@
+<map id="rectangle.cpp" name="rectangle.cpp">
+<area shape="rect" id="Node000001" title="Реализация методов класса Rectangle." alt="" coords="211,5,321,31"/>
+<area shape="rect" id="Node000002" href="$rectangle_8h.html" title="Класс для представления прямоугольника" alt="" coords="56,79,151,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,33,144,75,141,71,239,28"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="175,79,255,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="260,33,234,69,229,66,255,29"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="279,79,354,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="277,29,303,66,298,69,272,33"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="378,79,453,104"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="291,28,380,70,377,75,289,33"/>
+<area shape="rect" id="Node000003" href="$polygon_8h.html" title="Класс для представления многоугольников" alt="" coords="60,152,147,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,104,106,138,101,138,101,104"/>
+<area shape="rect" id="Node000004" href="$figure_8h.html" title="Абстрактный базовый класс для геометрических фигур" alt="" coords="68,225,139,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="106,178,106,212,101,212,101,178"/>
+<area shape="rect" id="Node000005" href="$drawable_8h.html" title="Интерфейс для рисования объектов" alt="" coords="5,299,100,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="97,253,71,289,67,286,93,249"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="125,299,183,324"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="114,249,140,286,136,289,110,253"/>
+</map>

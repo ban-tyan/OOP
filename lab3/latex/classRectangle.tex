@@ -1,0 +1,336 @@
+\doxysection{Rectangle Class Reference}
+\hypertarget{classRectangle}{}\label{classRectangle}\index{Rectangle@{Rectangle}}
+
+
+{\ttfamily \#include $<$rectangle.\+h$>$}
+
+
+
+Inheritance diagram for Rectangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classRectangle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rectangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classRectangle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRectangle_a16d6ae37958f53e126569e08ad30f14a}{Rectangle}} (const std\+::string \&\mbox{\hyperlink{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0}{name}}="{}Rectangle"{}, double \mbox{\hyperlink{classRectangle_ac2c47512ca05c56cec73c32bb693d479}{width}}=1.\+0, double \mbox{\hyperlink{classRectangle_a58c0573f0d706d238759395e8272c6bf}{height}}=1.\+0, double x=0.\+0, double y=0.\+0)
+\begin{DoxyCompactList}\small\item\em Конструктор прямоугольника \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRectangle_af178afae625255422760e4ff241b15fe}{Rectangle}} (const \mbox{\hyperlink{classRectangle}{Rectangle}} \&other)
+\begin{DoxyCompactList}\small\item\em Конструктор копирования \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRectangle}{Rectangle}} \& \mbox{\hyperlink{classRectangle_aceac2b7976b2e6b0d482dd01501f0f09}{operator=}} (const \mbox{\hyperlink{classRectangle}{Rectangle}} \&other)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classRectangle_aab6845e3b4fc1cf25333ba35b59087d5}{area}} () const override
+\begin{DoxyCompactList}\small\item\em Переопределенная функция вычисления площади \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classRectangle_a17bb76d1851a4744fa27838944c8bba3}{draw}} () const override
+\begin{DoxyCompactList}\small\item\em Переопределенная функция рисования \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classRectangle_aecd0d7e98820ca4bf568093384891b36}{get\+Info}} () const override
+\begin{DoxyCompactList}\small\item\em Переопределенная функция получения информации \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classRectangle_aa648b3d1bde8b37fa4e5f21536ad77c6}{set\+Fill\+Color}} (const std\+::string \&color) override
+\begin{DoxyCompactList}\small\item\em Переопределение функции установки цвета заливки \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRectangle_a0d38078e09cd3151d3009eed3a449660}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Получение ширины \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRectangle_ae2fb8da7f67a36a80d8f789eec63a074}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Получение высоты \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRectangle_a1beae29654e99895b4b4d21c61ea5abb}{set\+Dimensions}} (double new\+Width, double new\+Height)
+\begin{DoxyCompactList}\small\item\em Установка размеров \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classRectangle_a00cf17f63b05b9e410bf491cde36f2a7}{is\+Square}} () const
+\begin{DoxyCompactList}\small\item\em Проверка, является ли прямоугольник квадратом \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classPolygon}{Polygon}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPolygon_a44dd6fb25228d411388abac101698e01}{Polygon}} (const std\+::string \&\mbox{\hyperlink{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0}{name}}="{}Polygon"{}, int \mbox{\hyperlink{classPolygon_a7a01360856c8685e51f884ede78e34a1}{vertices\+Count}}=0, const \mbox{\hyperlink{structPoint}{Point}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPolygon_a979aa3e3dd03fd234920e4b396b14096}{vertices}}=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор многоугольника \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolygon_a117451a285cc0c9d443638cd449e032b}{Polygon}} (const \mbox{\hyperlink{classPolygon}{Polygon}} \&other)
+\begin{DoxyCompactList}\small\item\em Конструктор копирования \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolygon}{Polygon}} \& \mbox{\hyperlink{classPolygon_a073ed9d24fca614f09b23b0ed6571e36}{operator=}} (const \mbox{\hyperlink{classPolygon}{Polygon}} \&other)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Polygon} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPolygon_ac8139f7af3469386853ab3099fe2bf86}{set\+Vertices}} (int count, const \mbox{\hyperlink{structPoint}{Point}} \texorpdfstring{$\ast$}{*}points)
+\begin{DoxyCompactList}\small\item\em Установка вершин многоугольника \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPolygon_a1e087202d5c947511b1e866347a51d24}{get\+Vertices\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Получение количества вершин \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPoint}{Point}} \mbox{\hyperlink{classPolygon_a002de661667b1bdab8fc3a4d254b91bb}{get\+Vertex}} (int index) const
+\begin{DoxyCompactList}\small\item\em Получение вершины по индексу \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFigure}{Figure}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFigure_a1a3b9a14ba08bd67ca20b5964410f3a6}{Figure}} (const std\+::string \&\mbox{\hyperlink{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0}{name}}="{}Figure"{})
+\begin{DoxyCompactList}\small\item\em Конструктор фигуры \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Figure} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classFigure_a87ea4bca7d8cef43d78416e353175155}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Получить название фигуры \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFigure_afae38b4edf9e3697be61a70feb64dad5}{set\+Name}} (const std\+::string \&new\+Name)
+\begin{DoxyCompactList}\small\item\em Функция установки имени \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classRectangle_ac2c47512ca05c56cec73c32bb693d479}\label{classRectangle_ac2c47512ca05c56cec73c32bb693d479} 
+double {\bfseries width}
+\begin{DoxyCompactList}\small\item\em Ширина прямоугольника \end{DoxyCompactList}\item 
+\Hypertarget{classRectangle_a58c0573f0d706d238759395e8272c6bf}\label{classRectangle_a58c0573f0d706d238759395e8272c6bf} 
+double {\bfseries height}
+\begin{DoxyCompactList}\small\item\em Высота прямоугольника \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classPolygon}{Polygon}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries vertices\+Count}
+\begin{DoxyCompactList}\small\item\em Количество вершин \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPoint}{Point}} \texorpdfstring{$\ast$}{*} {\bfseries vertices}
+\begin{DoxyCompactList}\small\item\em Динамический массив координат вершин \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFigure}{Figure}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Название фигуры \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classFigure}{Figure}}}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classFigure_a15b23d9de80a77dd93f08175e4074e57}{get\+Figure\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Статическая функция получения количества созданных фигур \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classFigure_a4c5bace66237ae4ffd3db11af947fb54}{get\+Average\+Area}} (double total\+Area)
+\begin{DoxyCompactList}\small\item\em Статическая функция получения средней площади всех фигур \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classPolygon}{Polygon}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \mbox{\hyperlink{classPolygon_aa9a3a95677a430b7a0bcaa0724785d4f}{calculate\+Area}} () const
+\begin{DoxyCompactList}\small\item\em Вычисляет площадь многоугольника по формуле площади Гаусса \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classFigure}{Figure}}}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries figure\+Count} = 0
+\begin{DoxyCompactList}\small\item\em Статический счетчик созданных фигур \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Представляет прямоугольник с заданными шириной и высотой. Автоматически вычисляет координаты вершин. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classRectangle_a16d6ae37958f53e126569e08ad30f14a}\label{classRectangle_a16d6ae37958f53e126569e08ad30f14a} 
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily "{}Rectangle"{}},  }\item[{double}]{width = {\ttfamily 1.0},  }\item[{double}]{height = {\ttfamily 1.0},  }\item[{double}]{x = {\ttfamily 0.0},  }\item[{double}]{y = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+Конструктор прямоугольника 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Название прямоугольника \\
+\hline
+{\em width} & Ширина \\
+\hline
+{\em height} & Высота \\
+\hline
+{\em x} & Левый нижний угол X \\
+\hline
+{\em y} & Левый нижний угол Y \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & если ширина или высота \texorpdfstring{$<$}{<}= 0 \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classRectangle_af178afae625255422760e4ff241b15fe}\label{classRectangle_af178afae625255422760e4ff241b15fe} 
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRectangle}{Rectangle}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Конструктор копирования 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Другой прямоугольник \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classRectangle_aab6845e3b4fc1cf25333ba35b59087d5}\label{classRectangle_aab6845e3b4fc1cf25333ba35b59087d5} 
+\index{Rectangle@{Rectangle}!area@{area}}
+\index{area@{area}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily double Rectangle\+::area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Переопределенная функция вычисления площади 
+
+\begin{DoxyReturn}{Returns}
+Площадь прямоугольника 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classPolygon_a39f395d2c78ce9103fa57a7b71adecea}{Polygon}}.
+
+\Hypertarget{classRectangle_a17bb76d1851a4744fa27838944c8bba3}\label{classRectangle_a17bb76d1851a4744fa27838944c8bba3} 
+\index{Rectangle@{Rectangle}!draw@{draw}}
+\index{draw@{draw}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Rectangle\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Переопределенная функция рисования 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPolygon_acb272374aa1e6aa0e34167a0354d457b}{Polygon}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classSquare_a33841b8ac792dae35104e1cea775f4c4}{Square}}.
+
+\Hypertarget{classRectangle_ae2fb8da7f67a36a80d8f789eec63a074}\label{classRectangle_ae2fb8da7f67a36a80d8f789eec63a074} 
+\index{Rectangle@{Rectangle}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily double Rectangle\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение высоты 
+
+\begin{DoxyReturn}{Returns}
+Высота прямоугольника 
+\end{DoxyReturn}
+\Hypertarget{classRectangle_aecd0d7e98820ca4bf568093384891b36}\label{classRectangle_aecd0d7e98820ca4bf568093384891b36} 
+\index{Rectangle@{Rectangle}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}}
+{\footnotesize\ttfamily std\+::string Rectangle\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Переопределенная функция получения информации 
+
+\begin{DoxyReturn}{Returns}
+Строка с информацией 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classPolygon_affbf972022b020d54219b8ed50bed820}{Polygon}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classSquare_a349d7eb4256cab9dd30bf7413aa850c2}{Square}}.
+
+\Hypertarget{classRectangle_a0d38078e09cd3151d3009eed3a449660}\label{classRectangle_a0d38078e09cd3151d3009eed3a449660} 
+\index{Rectangle@{Rectangle}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily double Rectangle\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение ширины 
+
+\begin{DoxyReturn}{Returns}
+Ширина прямоугольника 
+\end{DoxyReturn}
+\Hypertarget{classRectangle_a00cf17f63b05b9e410bf491cde36f2a7}\label{classRectangle_a00cf17f63b05b9e410bf491cde36f2a7} 
+\index{Rectangle@{Rectangle}!isSquare@{isSquare}}
+\index{isSquare@{isSquare}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{isSquare()}{isSquare()}}
+{\footnotesize\ttfamily bool Rectangle\+::is\+Square (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Проверка, является ли прямоугольник квадратом 
+
+\begin{DoxyReturn}{Returns}
+true если квадрат, false если нет 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classSquare_aef5d4afc089ee639c5448acd38d417a6}{Square}}.
+
+\Hypertarget{classRectangle_aceac2b7976b2e6b0d482dd01501f0f09}\label{classRectangle_aceac2b7976b2e6b0d482dd01501f0f09} 
+\index{Rectangle@{Rectangle}!operator=@{operator=}}
+\index{operator=@{operator=}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRectangle}{Rectangle}} \& Rectangle\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRectangle}{Rectangle}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Оператор присваивания 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Другой прямоугольник \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на текущий объект 
+\end{DoxyReturn}
+\Hypertarget{classRectangle_a1beae29654e99895b4b4d21c61ea5abb}\label{classRectangle_a1beae29654e99895b4b4d21c61ea5abb} 
+\index{Rectangle@{Rectangle}!setDimensions@{setDimensions}}
+\index{setDimensions@{setDimensions}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{setDimensions()}{setDimensions()}}
+{\footnotesize\ttfamily void Rectangle\+::set\+Dimensions (\begin{DoxyParamCaption}\item[{double}]{new\+Width,  }\item[{double}]{new\+Height }\end{DoxyParamCaption})}
+
+
+
+Установка размеров 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Width} & Новая ширина \\
+\hline
+{\em new\+Height} & Новая высота \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & если ширина или высота \texorpdfstring{$<$}{<}= 0 \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classRectangle_aa648b3d1bde8b37fa4e5f21536ad77c6}\label{classRectangle_aa648b3d1bde8b37fa4e5f21536ad77c6} 
+\index{Rectangle@{Rectangle}!setFillColor@{setFillColor}}
+\index{setFillColor@{setFillColor}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{setFillColor()}{setFillColor()}}
+{\footnotesize\ttfamily void Rectangle\+::set\+Fill\+Color (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Переопределение функции установки цвета заливки 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Название цвета \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPolygon_a642fd372b97db75715635d3564463dd1}{Polygon}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classSquare_ad09c88cceb3514af9ec502d2916a27c5}{Square}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{rectangle_8h}{rectangle.\+h}}\item 
+\mbox{\hyperlink{rectangle_8cpp}{rectangle.\+cpp}}\end{DoxyCompactItemize}

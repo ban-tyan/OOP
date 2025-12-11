@@ -1,0 +1,310 @@
+\doxysection{Polygon Class Reference}
+\hypertarget{classPolygon}{}\label{classPolygon}\index{Polygon@{Polygon}}
+
+
+{\ttfamily \#include $<$polygon.\+h$>$}
+
+
+
+Inheritance diagram for Polygon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classPolygon__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Polygon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classPolygon__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPolygon_a44dd6fb25228d411388abac101698e01}{Polygon}} (const std\+::string \&\mbox{\hyperlink{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0}{name}}="{}Polygon"{}, int \mbox{\hyperlink{classPolygon_a7a01360856c8685e51f884ede78e34a1}{vertices\+Count}}=0, const \mbox{\hyperlink{structPoint}{Point}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPolygon_a979aa3e3dd03fd234920e4b396b14096}{vertices}}=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор многоугольника \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolygon_a117451a285cc0c9d443638cd449e032b}{Polygon}} (const \mbox{\hyperlink{classPolygon}{Polygon}} \&other)
+\begin{DoxyCompactList}\small\item\em Конструктор копирования \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolygon}{Polygon}} \& \mbox{\hyperlink{classPolygon_a073ed9d24fca614f09b23b0ed6571e36}{operator=}} (const \mbox{\hyperlink{classPolygon}{Polygon}} \&other)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания \end{DoxyCompactList}\item 
+\Hypertarget{classPolygon_ace39c67107966db12e13a183f496c3b0}\label{classPolygon_ace39c67107966db12e13a183f496c3b0} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Polygon} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classPolygon_a39f395d2c78ce9103fa57a7b71adecea}{area}} () const override
+\begin{DoxyCompactList}\small\item\em Реализация виртуальной функции вычисления площади \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPolygon_acb272374aa1e6aa0e34167a0354d457b}{draw}} () const override
+\begin{DoxyCompactList}\small\item\em Реализация функции рисования \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classPolygon_affbf972022b020d54219b8ed50bed820}{get\+Info}} () const override
+\begin{DoxyCompactList}\small\item\em Получение информации о многоугольнике \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPolygon_ac8139f7af3469386853ab3099fe2bf86}{set\+Vertices}} (int count, const \mbox{\hyperlink{structPoint}{Point}} \texorpdfstring{$\ast$}{*}points)
+\begin{DoxyCompactList}\small\item\em Установка вершин многоугольника \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPolygon_a1e087202d5c947511b1e866347a51d24}{get\+Vertices\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Получение количества вершин \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPoint}{Point}} \mbox{\hyperlink{classPolygon_a002de661667b1bdab8fc3a4d254b91bb}{get\+Vertex}} (int index) const
+\begin{DoxyCompactList}\small\item\em Получение вершины по индексу \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPolygon_a642fd372b97db75715635d3564463dd1}{set\+Fill\+Color}} (const std\+::string \&color)
+\begin{DoxyCompactList}\small\item\em Виртуальная функция установки цвета заливки с реализацией по умолчанию \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFigure}{Figure}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFigure_a1a3b9a14ba08bd67ca20b5964410f3a6}{Figure}} (const std\+::string \&\mbox{\hyperlink{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0}{name}}="{}Figure"{})
+\begin{DoxyCompactList}\small\item\em Конструктор фигуры \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Figure} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classFigure_a87ea4bca7d8cef43d78416e353175155}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Получить название фигуры \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFigure_afae38b4edf9e3697be61a70feb64dad5}{set\+Name}} (const std\+::string \&new\+Name)
+\begin{DoxyCompactList}\small\item\em Функция установки имени \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \mbox{\hyperlink{classPolygon_aa9a3a95677a430b7a0bcaa0724785d4f}{calculate\+Area}} () const
+\begin{DoxyCompactList}\small\item\em Вычисляет площадь многоугольника по формуле площади Гаусса \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPolygon_a7a01360856c8685e51f884ede78e34a1}\label{classPolygon_a7a01360856c8685e51f884ede78e34a1} 
+int {\bfseries vertices\+Count}
+\begin{DoxyCompactList}\small\item\em Количество вершин \end{DoxyCompactList}\item 
+\Hypertarget{classPolygon_a979aa3e3dd03fd234920e4b396b14096}\label{classPolygon_a979aa3e3dd03fd234920e4b396b14096} 
+\mbox{\hyperlink{structPoint}{Point}} \texorpdfstring{$\ast$}{*} {\bfseries vertices}
+\begin{DoxyCompactList}\small\item\em Динамический массив координат вершин \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFigure}{Figure}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Название фигуры \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classFigure}{Figure}}}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classFigure_a15b23d9de80a77dd93f08175e4074e57}{get\+Figure\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Статическая функция получения количества созданных фигур \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classFigure_a4c5bace66237ae4ffd3db11af947fb54}{get\+Average\+Area}} (double total\+Area)
+\begin{DoxyCompactList}\small\item\em Статическая функция получения средней площади всех фигур \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classFigure}{Figure}}}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries figure\+Count} = 0
+\begin{DoxyCompactList}\small\item\em Статический счетчик созданных фигур \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Хранит координаты вершин многоугольника в динамическом массиве. Реализует методы вычисления площади и рисования для многоугольников. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPolygon_a44dd6fb25228d411388abac101698e01}\label{classPolygon_a44dd6fb25228d411388abac101698e01} 
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{Polygon()}{Polygon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Polygon\+::\+Polygon (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily "{}Polygon"{}},  }\item[{int}]{vertices\+Count = {\ttfamily 0},  }\item[{const \mbox{\hyperlink{structPoint}{Point}} \texorpdfstring{$\ast$}{*}}]{vertices = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Конструктор многоугольника 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Название многоугольника \\
+\hline
+{\em vertices\+Count} & Количество вершин \\
+\hline
+{\em vertices} & Массив вершин (если nullptr, создает пустой) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPolygon_a117451a285cc0c9d443638cd449e032b}\label{classPolygon_a117451a285cc0c9d443638cd449e032b} 
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{Polygon()}{Polygon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Polygon\+::\+Polygon (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolygon}{Polygon}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Конструктор копирования 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Другой многоугольник \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPolygon_a39f395d2c78ce9103fa57a7b71adecea}\label{classPolygon_a39f395d2c78ce9103fa57a7b71adecea} 
+\index{Polygon@{Polygon}!area@{area}}
+\index{area@{area}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily double Polygon\+::area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Реализация виртуальной функции вычисления площади 
+
+\begin{DoxyReturn}{Returns}
+Площадь многоугольника 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFigure_a434d2ebf4aef73f3570b3a6f4c3d3dd4}{Figure}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classRectangle_aab6845e3b4fc1cf25333ba35b59087d5}{Rectangle}}.
+
+\Hypertarget{classPolygon_aa9a3a95677a430b7a0bcaa0724785d4f}\label{classPolygon_aa9a3a95677a430b7a0bcaa0724785d4f} 
+\index{Polygon@{Polygon}!calculateArea@{calculateArea}}
+\index{calculateArea@{calculateArea}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{calculateArea()}{calculateArea()}}
+{\footnotesize\ttfamily double Polygon\+::calculate\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Вычисляет площадь многоугольника по формуле площади Гаусса 
+
+\begin{DoxyReturn}{Returns}
+Площадь многоугольника 
+\end{DoxyReturn}
+\Hypertarget{classPolygon_acb272374aa1e6aa0e34167a0354d457b}\label{classPolygon_acb272374aa1e6aa0e34167a0354d457b} 
+\index{Polygon@{Polygon}!draw@{draw}}
+\index{draw@{draw}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Polygon\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Реализация функции рисования 
+
+
+
+Implements \mbox{\hyperlink{classFigure_a7c3a3280c5d91f813dcf097ec2777df5}{Figure}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classRectangle_a17bb76d1851a4744fa27838944c8bba3}{Rectangle}}, and \mbox{\hyperlink{classSquare_a33841b8ac792dae35104e1cea775f4c4}{Square}}.
+
+\Hypertarget{classPolygon_affbf972022b020d54219b8ed50bed820}\label{classPolygon_affbf972022b020d54219b8ed50bed820} 
+\index{Polygon@{Polygon}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}}
+{\footnotesize\ttfamily std\+::string Polygon\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Получение информации о многоугольнике 
+
+\begin{DoxyReturn}{Returns}
+Строка с информацией 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classFigure_aa415279d7bb3b82f61ef500c87c3974e}{Figure}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classRectangle_aecd0d7e98820ca4bf568093384891b36}{Rectangle}}, and \mbox{\hyperlink{classSquare_a349d7eb4256cab9dd30bf7413aa850c2}{Square}}.
+
+\Hypertarget{classPolygon_a002de661667b1bdab8fc3a4d254b91bb}\label{classPolygon_a002de661667b1bdab8fc3a4d254b91bb} 
+\index{Polygon@{Polygon}!getVertex@{getVertex}}
+\index{getVertex@{getVertex}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{getVertex()}{getVertex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPoint}{Point}} Polygon\+::get\+Vertex (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Получение вершины по индексу 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Индекс вершины \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Точка с координатами вершины 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & если индекс вне диапазона \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classPolygon_a1e087202d5c947511b1e866347a51d24}\label{classPolygon_a1e087202d5c947511b1e866347a51d24} 
+\index{Polygon@{Polygon}!getVerticesCount@{getVerticesCount}}
+\index{getVerticesCount@{getVerticesCount}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{getVerticesCount()}{getVerticesCount()}}
+{\footnotesize\ttfamily int Polygon\+::get\+Vertices\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение количества вершин 
+
+\begin{DoxyReturn}{Returns}
+Количество вершин 
+\end{DoxyReturn}
+\Hypertarget{classPolygon_a073ed9d24fca614f09b23b0ed6571e36}\label{classPolygon_a073ed9d24fca614f09b23b0ed6571e36} 
+\index{Polygon@{Polygon}!operator=@{operator=}}
+\index{operator=@{operator=}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPolygon}{Polygon}} \& Polygon\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolygon}{Polygon}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Оператор присваивания 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Другой многоугольник \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на текущий объект 
+\end{DoxyReturn}
+\Hypertarget{classPolygon_a642fd372b97db75715635d3564463dd1}\label{classPolygon_a642fd372b97db75715635d3564463dd1} 
+\index{Polygon@{Polygon}!setFillColor@{setFillColor}}
+\index{setFillColor@{setFillColor}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{setFillColor()}{setFillColor()}}
+{\footnotesize\ttfamily void Polygon\+::set\+Fill\+Color (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Виртуальная функция установки цвета заливки с реализацией по умолчанию 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Название цвета \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classRectangle_aa648b3d1bde8b37fa4e5f21536ad77c6}{Rectangle}}, and \mbox{\hyperlink{classSquare_ad09c88cceb3514af9ec502d2916a27c5}{Square}}.
+
+\Hypertarget{classPolygon_ac8139f7af3469386853ab3099fe2bf86}\label{classPolygon_ac8139f7af3469386853ab3099fe2bf86} 
+\index{Polygon@{Polygon}!setVertices@{setVertices}}
+\index{setVertices@{setVertices}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{setVertices()}{setVertices()}}
+{\footnotesize\ttfamily void Polygon\+::set\+Vertices (\begin{DoxyParamCaption}\item[{int}]{count,  }\item[{const \mbox{\hyperlink{structPoint}{Point}} \texorpdfstring{$\ast$}{*}}]{points }\end{DoxyParamCaption})}
+
+
+
+Установка вершин многоугольника 
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & Количество вершин \\
+\hline
+{\em points} & Массив вершин \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & если count \texorpdfstring{$<$}{<} 3 \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{polygon_8h}{polygon.\+h}}\item 
+\mbox{\hyperlink{polygon_8cpp}{polygon.\+cpp}}\end{DoxyCompactItemize}

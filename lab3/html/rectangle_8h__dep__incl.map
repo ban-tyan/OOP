@@ -1,0 +1,15 @@
+<map id="rectangle.h" name="rectangle.h">
+<area shape="rect" id="Node000001" title="Класс для представления прямоугольника" alt="" coords="117,5,211,31"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html" title="Комплексное тестирование иерархии классов геометрических фигур" alt="" coords="5,152,88,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,35,68,52,52,65,40,80,33,98,34,117,44,151,39,153,28,118,28,97,35,77,49,61,65,48,102,30"/>
+<area shape="rect" id="Node000003" href="$rectangle_8cpp.html" title="Реализация методов класса Rectangle." alt="" coords="50,79,161,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,43,117,80,113,77,144,40"/>
+<area shape="rect" id="Node000004" href="$square_8h.html" title="Класс для представления квадрата" alt="" coords="185,79,263,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,40,216,77,212,80,181,43"/>
+<area shape="rect" id="Node000006" href="$test_8cpp.html" title="Дополнительные комплексные тесты для демонстрации требований" alt="" coords="264,152,339,177"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="214,33,247,51,277,77,288,96,296,116,303,151,298,152,291,117,284,98,273,80,244,56,212,38"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="184,112,77,154,75,149,182,107"/>
+<area shape="rect" id="Node000005" href="$square_8cpp.html" title="Реализация методов класса Square." alt="" coords="147,152,240,177"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="216,118,201,153,196,151,211,116"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="248,111,290,150,287,154,245,115"/>
+</map>

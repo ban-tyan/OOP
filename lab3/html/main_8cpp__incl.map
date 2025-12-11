@@ -1,0 +1,26 @@
+<map id="main.cpp" name="main.cpp">
+<area shape="rect" id="Node000001" title="Комплексное тестирование иерархии классов геометрических фигур" alt="" coords="324,5,407,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,85,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="324,31,99,81,98,76,323,26"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="109,79,179,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="331,33,192,77,191,72,329,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="203,79,266,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="346,33,269,74,267,70,343,28"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="290,79,366,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="362,32,343,68,338,65,357,30"/>
+<area shape="rect" id="Node000006" href="$figure_8h.html" title="Абстрактный базовый класс для геометрических фигур" alt="" coords="409,299,479,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="371,30,440,284,435,286,366,31"/>
+<area shape="rect" id="Node000009" href="$polygon_8h.html" title="Класс для представления многоугольников" alt="" coords="442,225,529,251"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="381,29,403,50,425,77,444,112,460,149,481,212,476,213,455,151,440,115,420,80,399,54,377,33"/>
+<area shape="rect" id="Node000010" href="$rectangle_8h.html" title="Класс для представления прямоугольника" alt="" coords="493,152,587,177"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="394,28,434,49,475,77,505,108,528,139,524,142,501,111,472,81,431,53,392,33"/>
+<area shape="rect" id="Node000011" href="$square_8h.html" title="Класс для представления квадрата" alt="" coords="543,79,622,104"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="401,28,535,72,534,77,399,33"/>
+<area shape="rect" id="Node000007" href="$drawable_8h.html" title="Интерфейс для рисования объектов" alt="" coords="346,372,441,397"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="438,326,412,362,407,359,433,323"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="465,372,524,397"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="455,323,481,359,476,362,450,326"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="481,252,460,288,455,285,476,250"/>
+<area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="533,179,505,216,500,213,529,176"/>
+<area shape="poly" id="edge13_Node000011_Node000010" title=" " alt="" coords="578,106,556,142,552,139,573,103"/>
+</map>

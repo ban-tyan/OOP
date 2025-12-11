@@ -1,0 +1,50 @@
+\doxysection{polygon.\+h}
+\hypertarget{polygon_8h_source}{}\label{polygon_8h_source}\mbox{\hyperlink{polygon_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ POLYGON\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ POLYGON\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{figure_8h}{figure.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structPoint}{Point}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{double}\ x,\ y;}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{structPoint}{Point}}(\textcolor{keywordtype}{double}\ x\ =\ 0,\ \textcolor{keywordtype}{double}\ y\ =\ 0)\ :\ x(x),\ y(y)\ \{\}}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPolygon}{Polygon}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFigure}{Figure}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPolygon_a7a01360856c8685e51f884ede78e34a1}{verticesCount}};\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{structPoint}{Point}}*\ \mbox{\hyperlink{classPolygon_a979aa3e3dd03fd234920e4b396b14096}{vertices}};\ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPolygon_aa9a3a95677a430b7a0bcaa0724785d4f}{calculateArea}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{classPolygon}{Polygon}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0}{name}}\ =\ \textcolor{stringliteral}{"{}Polygon"{}},\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPolygon_a7a01360856c8685e51f884ede78e34a1}{verticesCount}}\ =\ 0,\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPoint}{Point}}*\ \mbox{\hyperlink{classPolygon_a979aa3e3dd03fd234920e4b396b14096}{vertices}}\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00044\ \ \ \ \ }
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{classPolygon}{Polygon}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolygon}{Polygon}}\&\ other);}
+\DoxyCodeLine{00050\ \ \ \ \ }
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{classPolygon}{Polygon}}\&\ \mbox{\hyperlink{classPolygon_a073ed9d24fca614f09b23b0ed6571e36}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolygon}{Polygon}}\&\ other);}
+\DoxyCodeLine{00057\ \ \ \ \ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classPolygon_ace39c67107966db12e13a183f496c3b0}{\string~Polygon}}();}
+\DoxyCodeLine{00062\ \ \ \ \ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPolygon_a39f395d2c78ce9103fa57a7b71adecea}{area}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00068\ \ \ \ \ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPolygon_acb272374aa1e6aa0e34167a0354d457b}{draw}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00073\ \ \ \ \ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classPolygon_affbf972022b020d54219b8ed50bed820}{getInfo}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00079\ \ \ \ \ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPolygon_ac8139f7af3469386853ab3099fe2bf86}{setVertices}}(\textcolor{keywordtype}{int}\ count,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPoint}{Point}}*\ points);}
+\DoxyCodeLine{00087\ \ \ \ \ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPolygon_a1e087202d5c947511b1e866347a51d24}{getVerticesCount}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPolygon_a7a01360856c8685e51f884ede78e34a1}{verticesCount}};\ \}}
+\DoxyCodeLine{00093\ \ \ \ \ }
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{structPoint}{Point}}\ \mbox{\hyperlink{classPolygon_a002de661667b1bdab8fc3a4d254b91bb}{getVertex}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00101\ \ \ \ \ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPolygon_a642fd372b97db75715635d3564463dd1}{setFillColor}}(\textcolor{keyword}{const}\ std::string\&\ color);}
+\DoxyCodeLine{00107\ \};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ POLYGON\_H}}
+
+\end{DoxyCode}

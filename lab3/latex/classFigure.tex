@@ -1,0 +1,202 @@
+\doxysection{Figure Class Reference}
+\hypertarget{classFigure}{}\label{classFigure}\index{Figure@{Figure}}
+
+
+{\ttfamily \#include $<$figure.\+h$>$}
+
+
+
+Inheritance diagram for Figure\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classFigure__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Figure\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{classFigure__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFigure_a1a3b9a14ba08bd67ca20b5964410f3a6}{Figure}} (const std\+::string \&\mbox{\hyperlink{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0}{name}}="{}Figure"{})
+\begin{DoxyCompactList}\small\item\em Конструктор фигуры \end{DoxyCompactList}\item 
+\Hypertarget{classFigure_af155c20558330034441de6a19d94f4a7}\label{classFigure_af155c20558330034441de6a19d94f4a7} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Figure} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classFigure_a87ea4bca7d8cef43d78416e353175155}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Получить название фигуры \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classFigure_a434d2ebf4aef73f3570b3a6f4c3d3dd4}{area}} () const =0
+\begin{DoxyCompactList}\small\item\em Чисто виртуальная функция вычисления площади \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFigure_a7c3a3280c5d91f813dcf097ec2777df5}{draw}} () const override=0
+\begin{DoxyCompactList}\small\item\em Чисто виртуальная функция рисования \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classFigure_aa415279d7bb3b82f61ef500c87c3974e}{get\+Info}} () const
+\begin{DoxyCompactList}\small\item\em Виртуальная функция получения информации о фигуре \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFigure_afae38b4edf9e3697be61a70feb64dad5}{set\+Name}} (const std\+::string \&new\+Name)
+\begin{DoxyCompactList}\small\item\em Функция установки имени \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classFigure_a15b23d9de80a77dd93f08175e4074e57}{get\+Figure\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Статическая функция получения количества созданных фигур \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classFigure_a4c5bace66237ae4ffd3db11af947fb54}{get\+Average\+Area}} (double total\+Area)
+\begin{DoxyCompactList}\small\item\em Статическая функция получения средней площади всех фигур \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0}\label{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0} 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Название фигуры \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFigure_a9b67e5212938176365fd278f7c06d056}\label{classFigure_a9b67e5212938176365fd278f7c06d056} 
+static int {\bfseries figure\+Count} = 0
+\begin{DoxyCompactList}\small\item\em Статический счетчик созданных фигур \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Наследует интерфейс \doxylink{classDrawable}{Drawable}. Содержит чисто виртуальные функции для вычисления площади и рисования фигуры. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classFigure_a1a3b9a14ba08bd67ca20b5964410f3a6}\label{classFigure_a1a3b9a14ba08bd67ca20b5964410f3a6} 
+\index{Figure@{Figure}!Figure@{Figure}}
+\index{Figure@{Figure}!Figure@{Figure}}
+\doxysubsubsection{\texorpdfstring{Figure()}{Figure()}}
+{\footnotesize\ttfamily Figure\+::\+Figure (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily "{}Figure"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор фигуры 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Название фигуры \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFigure_a434d2ebf4aef73f3570b3a6f4c3d3dd4}\label{classFigure_a434d2ebf4aef73f3570b3a6f4c3d3dd4} 
+\index{Figure@{Figure}!area@{area}}
+\index{area@{area}!Figure@{Figure}}
+\doxysubsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily virtual double Figure\+::area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Чисто виртуальная функция вычисления площади 
+
+\begin{DoxyReturn}{Returns}
+Площадь фигуры 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPolygon_a39f395d2c78ce9103fa57a7b71adecea}{Polygon}}, and \mbox{\hyperlink{classRectangle_aab6845e3b4fc1cf25333ba35b59087d5}{Rectangle}}.
+
+\Hypertarget{classFigure_a7c3a3280c5d91f813dcf097ec2777df5}\label{classFigure_a7c3a3280c5d91f813dcf097ec2777df5} 
+\index{Figure@{Figure}!draw@{draw}}
+\index{draw@{draw}!Figure@{Figure}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Figure\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Чисто виртуальная функция рисования 
+
+
+
+Implements \mbox{\hyperlink{classDrawable_ad01732eb7df822045fb3fd830d5f5f22}{Drawable}}.
+
+
+
+Implemented in \mbox{\hyperlink{classPolygon_acb272374aa1e6aa0e34167a0354d457b}{Polygon}}, \mbox{\hyperlink{classRectangle_a17bb76d1851a4744fa27838944c8bba3}{Rectangle}}, and \mbox{\hyperlink{classSquare_a33841b8ac792dae35104e1cea775f4c4}{Square}}.
+
+\Hypertarget{classFigure_a4c5bace66237ae4ffd3db11af947fb54}\label{classFigure_a4c5bace66237ae4ffd3db11af947fb54} 
+\index{Figure@{Figure}!getAverageArea@{getAverageArea}}
+\index{getAverageArea@{getAverageArea}!Figure@{Figure}}
+\doxysubsubsection{\texorpdfstring{getAverageArea()}{getAverageArea()}}
+{\footnotesize\ttfamily double Figure\+::get\+Average\+Area (\begin{DoxyParamCaption}\item[{double}]{total\+Area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Статическая функция получения средней площади всех фигур 
+
+
+\begin{DoxyParams}{Parameters}
+{\em total\+Area} & Общая площадь всех фигур \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Средняя площадь или 0 если фигур нет 
+\end{DoxyReturn}
+\Hypertarget{classFigure_a15b23d9de80a77dd93f08175e4074e57}\label{classFigure_a15b23d9de80a77dd93f08175e4074e57} 
+\index{Figure@{Figure}!getFigureCount@{getFigureCount}}
+\index{getFigureCount@{getFigureCount}!Figure@{Figure}}
+\doxysubsubsection{\texorpdfstring{getFigureCount()}{getFigureCount()}}
+{\footnotesize\ttfamily int Figure\+::get\+Figure\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Статическая функция получения количества созданных фигур 
+
+\begin{DoxyReturn}{Returns}
+Количество созданных фигур 
+\end{DoxyReturn}
+\Hypertarget{classFigure_aa415279d7bb3b82f61ef500c87c3974e}\label{classFigure_aa415279d7bb3b82f61ef500c87c3974e} 
+\index{Figure@{Figure}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!Figure@{Figure}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}}
+{\footnotesize\ttfamily std\+::string Figure\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Виртуальная функция получения информации о фигуре 
+
+\begin{DoxyReturn}{Returns}
+Строка с информацией 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPolygon_affbf972022b020d54219b8ed50bed820}{Polygon}}, \mbox{\hyperlink{classRectangle_aecd0d7e98820ca4bf568093384891b36}{Rectangle}}, and \mbox{\hyperlink{classSquare_a349d7eb4256cab9dd30bf7413aa850c2}{Square}}.
+
+\Hypertarget{classFigure_a87ea4bca7d8cef43d78416e353175155}\label{classFigure_a87ea4bca7d8cef43d78416e353175155} 
+\index{Figure@{Figure}!getName@{getName}}
+\index{getName@{getName}!Figure@{Figure}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual std\+::string Figure\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Получить название фигуры 
+
+\begin{DoxyReturn}{Returns}
+Название фигуры 
+\end{DoxyReturn}
+\Hypertarget{classFigure_afae38b4edf9e3697be61a70feb64dad5}\label{classFigure_afae38b4edf9e3697be61a70feb64dad5} 
+\index{Figure@{Figure}!setName@{setName}}
+\index{setName@{setName}!Figure@{Figure}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Figure\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{new\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Функция установки имени 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Name} & Новое имя фигуры \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{figure_8h}{figure.\+h}}\item 
+\mbox{\hyperlink{figure_8cpp}{figure.\+cpp}}\end{DoxyCompactItemize}

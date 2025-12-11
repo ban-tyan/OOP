@@ -1,0 +1,109 @@
+@startuml GeometricFigures
+
+' Настройки
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+    FontSize 12
+}
+skinparam stereotypeCBackgroundColor #DDDDDD
+
+title "Диаграмма классов: Геометрические фигуры"
+
+' Интерфейс
+interface Drawable {
+    + {abstract} draw() : void
+}
+
+' Абстрактный базовый класс
+abstract class Figure {
+    # name : string
+    + {static} figureCount : int
+    + {abstract} area() : double
+    + {abstract} draw() : void
+    + getInfo() : string
+    + {static} getFigureCount() : int
+    + {static} getAverageArea(totalArea: double) : double
+    + setName(newName: string) : void
+}
+
+' Промежуточный класс
+class Polygon {
+    # verticesCount : int
+    # vertices : Point*
+    + calculateArea() : double
+    + area() : double
+    + draw() : void
+    + getInfo() : string
+    + setFillColor(color: string) : void
+    + setVertices(count: int, points: Point*) : void
+    + getVertex(index: int) : Point
+}
+
+' Конкретные классы
+class Rectangle {
+    # width : double
+    # height : double
+    + area() : double
+    + draw() : void
+    + getInfo() : string
+    + setFillColor(color: string) : void
+    + setDimensions(newWidth: double, newHeight: double) : void
+    + isSquare() : bool
+}
+
+class Square {
+    + draw() : void
+    + getInfo() : string
+    + setFillColor(color: string) : void
+    + setSide(newSide: double) : void
+    + isSquare() : bool
+}
+
+' Вспомогательная структура
+class Point <<struct>> {
+    + x : double
+    + y : double
+    + Point(x: double = 0, y: double = 0)
+}
+
+' Наследование
+Drawable <|-- Figure
+Figure <|-- Polygon
+Polygon <|-- Rectangle
+Rectangle <|-- Square
+
+' Композиция
+Polygon *-- "vertices" Point
+
+' Примечания
+note top of Drawable
+    <b>Интерфейс</b>
+    Множественное наследование
+    Чисто виртуальная функция draw()
+end note
+
+note right of Figure
+    <b>Абстрактный базовый класс</b>
+    Содержит чисто виртуальные функции:
+    - area()
+    - draw()
+    Статический член figureCount
+end note
+
+note left of Polygon
+    <b>Промежуточный класс</b>
+    Динамический массив вершин
+    Виртуальная функция setFillColor()
+    с реализацией по умолчанию
+end note
+
+note bottom of Square
+    <b>Конкретный класс</b>
+    Наследует от Rectangle
+    Переопределяет draw(), getInfo(), setFillColor()
+    Дополнительный метод setSide()
+end note
+
+@enduml

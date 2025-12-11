@@ -1,0 +1,38 @@
+\doxysection{figure.\+h}
+\hypertarget{figure_8h_source}{}\label{figure_8h_source}\mbox{\hyperlink{figure_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ FIGURE\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ FIGURE\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{drawable_8h}{drawable.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFigure}{Figure}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classDrawable}{Drawable}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00017\ \ \ \ \ std::string\ \mbox{\hyperlink{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0}{name}};\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classFigure_a9b67e5212938176365fd278f7c06d056}{figureCount}};\ }
+\DoxyCodeLine{00019\ \ \ \ \ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classFigure}{Figure}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0}{name}}\ =\ \textcolor{stringliteral}{"{}Figure"{}});}
+\DoxyCodeLine{00026\ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classFigure_af155c20558330034441de6a19d94f4a7}{\string~Figure}}();}
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classFigure_a87ea4bca7d8cef43d78416e353175155}{getName}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0}{name}};\ \}}
+\DoxyCodeLine{00037\ \ \ \ \ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classFigure_a434d2ebf4aef73f3570b3a6f4c3d3dd4}{area}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFigure_a7c3a3280c5d91f813dcf097ec2777df5}{draw}}()\ \textcolor{keyword}{const\ override}\ =\ 0;}
+\DoxyCodeLine{00050\ \ \ \ \ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classFigure_aa415279d7bb3b82f61ef500c87c3974e}{getInfo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00056\ \ \ \ \ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classFigure_a15b23d9de80a77dd93f08175e4074e57}{getFigureCount}}();}
+\DoxyCodeLine{00062\ \ \ \ \ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classFigure_a4c5bace66237ae4ffd3db11af947fb54}{getAverageArea}}(\textcolor{keywordtype}{double}\ totalArea);}
+\DoxyCodeLine{00069\ \ \ \ \ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFigure_afae38b4edf9e3697be61a70feb64dad5}{setName}}(\textcolor{keyword}{const}\ std::string\&\ newName)\ \{\ \mbox{\hyperlink{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0}{name}}\ =\ newName;\ \}}
+\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FIGURE\_H}}
+
+\end{DoxyCode}

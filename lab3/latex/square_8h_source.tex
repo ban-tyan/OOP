@@ -1,0 +1,36 @@
+\doxysection{square.\+h}
+\hypertarget{square_8h_source}{}\label{square_8h_source}\mbox{\hyperlink{square_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ SQUARE\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ SQUARE\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{rectangle_8h}{rectangle.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSquare}{Square}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classRectangle}{Rectangle}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classSquare}{Square}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classFigure_a4593ca0f9ada8bf84399b5e3bb1dcdd0}{name}}\ =\ \textcolor{stringliteral}{"{}Square"{}},\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ side\ =\ 1.0,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ x\ =\ 0.0,\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ y\ =\ 0.0);}
+\DoxyCodeLine{00027\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classSquare}{Square}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSquare}{Square}}\&\ other);}
+\DoxyCodeLine{00033\ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classSquare}{Square}}\&\ \mbox{\hyperlink{classSquare_aefd7f1993a8a7dc2da19773aa615d4e5}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSquare}{Square}}\&\ other);}
+\DoxyCodeLine{00040\ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSquare_a33841b8ac792dae35104e1cea775f4c4}{draw}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00045\ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classSquare_a349d7eb4256cab9dd30bf7413aa850c2}{getInfo}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00051\ \ \ \ \ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSquare_ad09c88cceb3514af9ec502d2916a27c5}{setFillColor}}(\textcolor{keyword}{const}\ std::string\&\ color)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00057\ \ \ \ \ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classSquare_ab670bd5d9126b09ebd7869670fb8f7c6}{getSide}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classRectangle_ac2c47512ca05c56cec73c32bb693d479}{width}};\ \}}
+\DoxyCodeLine{00063\ \ \ \ \ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSquare_acf0873aded5df947334cde5424b23f68}{setSide}}(\textcolor{keywordtype}{double}\ newSide);}
+\DoxyCodeLine{00070\ \ \ \ \ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSquare_aef5d4afc089ee639c5448acd38d417a6}{isSquare}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{00076\ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SQUARE\_H}}
+
+\end{DoxyCode}

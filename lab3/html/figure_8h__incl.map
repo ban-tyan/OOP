@@ -1,0 +1,7 @@
+<map id="figure.h" name="figure.h">
+<area shape="rect" id="Node000001" title="Абстрактный базовый класс для геометрических фигур" alt="" coords="68,5,139,31"/>
+<area shape="rect" id="Node000002" href="$drawable_8h.html" title="Интерфейс для рисования объектов" alt="" coords="5,79,100,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,33,71,69,67,66,93,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="125,79,183,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,29,140,66,136,69,110,33"/>
+</map>

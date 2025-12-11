@@ -1,0 +1,21 @@
+<map id="polygon.cpp" name="polygon.cpp">
+<area shape="rect" id="Node000001" title="Реализация методов класса Polygon." alt="" coords="306,5,407,31"/>
+<area shape="rect" id="Node000002" href="$polygon_8h.html" title="Класс для представления многоугольников" alt="" coords="60,79,147,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="317,33,158,77,157,72,315,28"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="171,79,251,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="334,33,248,75,246,70,332,28"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="276,79,339,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="351,33,325,69,321,66,346,29"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="363,79,449,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="367,29,392,66,388,69,363,33"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="474,79,549,104"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="383,28,475,70,473,75,380,33"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="573,79,647,104"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="398,28,560,73,558,78,397,33"/>
+<area shape="rect" id="Node000003" href="$figure_8h.html" title="Абстрактный базовый класс для геометрических фигур" alt="" coords="68,152,139,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,104,106,138,101,138,101,104"/>
+<area shape="rect" id="Node000004" href="$drawable_8h.html" title="Интерфейс для рисования объектов" alt="" coords="5,225,100,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="97,179,71,216,67,213,93,176"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="125,225,183,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="114,176,140,213,136,216,110,179"/>
+</map>
